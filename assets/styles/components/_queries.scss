@@ -1,0 +1,134 @@
+/* Pour la page d'acceuil */
+@media screen and (max-width: 1000px) {
+    .slider-text {margin-top: 0;}
+    #killmonger img {margin-top: 0;}
+    /* Pour que le texte ne passe pas à la ligne */
+    .div-hero a{white-space: nowrap;}
+    .bio {display: block; margin: 0 auto;}
+    .bio-gauche {margin-bottom: 30%;}
+    .bio-droite div{margin: 0 auto}
+    #bio-photo2 {margin-left: 20vw;}
+}
+
+@media screen and (max-width: 800px) {
+    .bio p{font-size: 19px;}
+    .hero-accueil {margin-bottom: 10%;}
+    .bio {display: block; margin: 0 auto;}
+    .bio-gauche {margin-bottom: 15em;}
+    .bio-droite p {line-height: 1em;}
+    .contact form {width: 90%; padding: 2em;}
+    /* Pour tous les footer */
+    footer {width: 100%; padding: 1em 0; margin: 0 auto;}
+    .card-footer {
+        width: 90%;
+        margin: 2em auto;
+        display: grid;
+        grid-template-areas: 
+            "footer-image footer-links"
+            "footer-image footer-socials"
+            "footer-text footer-text";
+        gap: 10px;
+    }
+    .footer-image { padding: 3em;}
+    .footer-image #bulle-footer {width: 150px;}
+    .footer-image #logo-footer {width: 70px;}
+    .footer-text p{ text-align: center;}
+}
+
+
+@media screen and (max-width: 400px) {
+    .nav-logo img{visibility: hidden; position: absolute;}
+    .statics {margin-left: 10px;}
+    .icons-statics {margin-left: 3px;}
+    .hero-accueil {margin-bottom: 10%;}
+    #hero-accueil-text p{font-size: 13px;}
+    /* Pour éviter le découpage de mot */
+    .div-hero a{width: 150%; white-space: nowrap;}
+    #hr2 {margin-left: 5px;}
+    section{padding: 0px 1em 0px 1em;}
+    .bio p{font-size: 16px;}
+    .div-hero img{visibility: hidden;}
+    .hero-accueil {background-image: none;}
+    .div-hero {background-image: none; width: 10%; height: auto;}
+    #hero-accueil-text p{padding-right: 10em;}
+    #fleche {top: 600px}
+    .bio {display: block; margin: 0 auto;}
+    .bio-gauche {margin-bottom: 15em;}
+    .bio-droite div {width: 150px; height: 600px; margin: 50% auto;}
+    .bio-droite div #bio-photo1 {width: 180px;}
+    .bio-droite #bio-photo2 {padding: 0; margin: 0;}
+    /* Pour tous les footer */
+    .contact form {width: 40%; padding: 5em;}
+    footer {width: 100%; padding: 1em 0 1em 0; margin: 0 auto;}
+    .card-footer {width: 90%; margin: 3em auto; display: grid; grid-template-areas:
+              "footer-image footer-links "
+              "footer-image footer-socials"
+              "footer-text footer-text"; gap: 10px;
+    }
+    .footer-image {margin-right: 0px;}
+  }
+
+  @media screen and (max-width: 300px) {
+    .statics {margin-left: 5px;}
+    #hr2 {margin-left: 5px;}
+    #hero-accueil-text p {padding-right: 15em;}
+    .bio-droite div {padding: 30px;}
+    /* Pour tous les footer */
+    .contact form {width: 40%; padding: 5em;}
+    
+    .footer-image {padding: 1em}
+  }
+
+  /* Dans la page Wakanda */
+  @media screen and (max-width: 800px) {
+    .hero-wakanda h1 {margin-top: 3em;}
+    .hero-wakanda .div-hero {width: 50%;}
+  } 
+  
+  @media screen and (max-width: 600px) {
+    .hero-wakanda h1 {width: auto;}
+    .hero-wakanda .div-hero {width: 60%;}
+    .doc  {display: block;}
+  }
+
+  @media screen and (max-width: 400px) {
+    .hero-wakanda h1 {width: auto;}
+    .hero-wakanda .div-hero {width: 70%;}
+    .doc  {display: block;}
+  }
+
+  /* Pour la page Enigme */
+
+  @media screen and (max-width: 1000px) {
+    .div-hero-enigme {display: block; float: none; margin: 0 auto;}
+    .div-hero-enigme h1{text-align: center; margin: 0 auto; text-shadow: 1px 1px 1px  rgb(0, 0, 0);}
+    .hero-text-enigme {margin: 20% 0 0 0;}
+    .hero-text-enigme #hero-img2 {visibility: hidden;}
+  }
+
+  
+  @media screen and (max-width: 700px) {
+    .hero-text-enigme {margin-top: 20%; font-size: 13px; margin-bottom: 150%;}
+    .div-hero-enigme h1 {margin-top: 150px; width: 170%; margin-bottom: 20%;}
+    #form {margin-top: 2em;}
+    #text-enigme { grid-template-areas:
+                        "text text"
+                        "alpha alpha" 
+                        "paragraphe paragraphe";}
+    .question {margin-top: 200px;}
+    .question div{width: 150%; font-size: 17px;}
+    }  
+    
+@media screen and (max-width: 400px) {
+    .hero-enigme {background-image: none;}
+    .div-hero-enigme div{width: 90%;}
+    #form {margin-top: 2em;}
+    #text-enigme { grid-template-areas:
+                        "text text"
+                        "alpha alpha" 
+                        "paragraphe paragraphe";}
+                        
+    .text-enigme {margin-top: 90%;}
+    .question {margin-top: 250px;}
+    .question div{width: 150%; font-size: 17px;}
+}

@@ -1,0 +1,248 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Annimation venant de la droite pour tous les éléments */
+html {
+    animation: body 2s ease-out forwards;
+}
+
+html {
+    animation: html 2s ease-out;
+}
+
+@keyframes html {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+
+h1 {
+    font-family: "panthera";
+    font-size: 50px;
+    color: var(--viollet1);
+    top: 0;
+}
+
+h2 {
+    font-family: "beyno";
+    color: var(--viollet1);
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "beyno";
+    color: var(--viollet1);
+    line-height: 40px;
+}
+
+p {
+    font-family: "cantarell";
+    font-size: 0.7em;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% auto;
+}
+
+nav .nav-logo img{
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Pour que les logos passe en viollet au passage de la souris */
+.nav-logo img:hover {
+    filter: invert(70%) sepia(20%) saturate(5) hue-rotate(270deg);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin: 10px;
+    color: white;
+}
+
+.nav-links a, .nav-links a:visited{
+    font-family: "beyno";
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links ul li .active{
+    text-decoration: underline;
+    color: var(--viollet1);
+}
+
+/* Mettre le même background à toutes les pages */
+body{
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%);
+    overflow-x: hidden;
+}
+
+/* Les icons statiques sur le côté */
+.statics {
+    position: sticky;
+    top: 0px;
+    margin-top: -150px;
+    margin-left: 20px;
+    writing-mode: vertical-lr;
+    overflow: hidden;
+    height: 350px;
+    cursor: pointer;
+}
+
+.icons-statics{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 340px;
+    text-align: end;
+}
+
+.icons-statics img{
+    width: 20px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Annimation sur les icons */
+.icons-statics img:hover{
+    filter: invert(0%) sepia(100%) saturate(0);
+}
+
+#hr1 {
+    border: 2px solid var(--viollet1);
+}
+
+#hr2 {
+    color: var(--viollet1);
+    border: 2px solid var(--viollet1);
+    margin-top: -10px;
+    margin-left: 8px;
+    float: left;
+    height: 60%;
+}
+
+/* Fin des sections dans Enigme */
+
+/* Le footer */
+footer {
+    width: 100%;
+    padding: 7em;
+    background-image: url('../Illustrations_Logo/back_footer.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-image #bulle-footer, .footer-image #logo-footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-image #bulle-footer {
+    width: 200px;
+}
+
+.footer-image #logo-footer {
+    width: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-footer {
+    width: 95%;
+    display: grid;
+    grid-template-areas:
+          ". . footer-image footer-links footer-socials"
+          ". . footer-image footer-text footer-text";
+}
+
+.footer-image {
+    grid-area: footer-image; 
+    position: relative;
+    margin-right: 5em;
+    transition: all 0.5s ease-out; /* Animation de 0,5s avec un effet de transition doux */
+}
+  
+.footer-image:hover {
+    transform: scale(1.1);
+}
+
+.footer-links {
+    grid-area: footer-links;
+    color: white;
+}
+
+.footer-links p{
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer-links ul li a{
+    line-height: 25px;
+    font-family: "cantarell";
+    cursor: pointer;
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-socials {
+    grid-area: footer-socials;
+}
+
+.footer-socials p {
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-socials img {
+    width: 30px;
+    margin-right: 20px;
+    transition: all 0.5s ease-out; /* Animation de 0,5s avec un effet de transition doux */
+}
+  
+.footer-socials img:hover {
+    transform: scale(1.1);
+}
+
+.footer-text {
+    margin-top: 80px;
+    grid-area: footer-text;
+}

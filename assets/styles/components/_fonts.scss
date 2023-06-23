@@ -1,0 +1,52 @@
+/* Les fonts */
+@font-face {
+    font-family: 'beyno';
+    src: url('../fonts/beyno/');
+    src: url('../fonts/beyno/?#iefix') format('embedded-opentype'),
+         url('../fonts/beyno/beyno-webfont.woff2') format('woff2'),
+         url('../fonts/beyno/beyno-webfont.woff') format('woff'),
+         url('../fonts/beyno/beyno-webfont.ttf') format('truetype'),
+         url('../fonts/beyno/beyno-webfont.svg#beynoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'panthera';
+    src: url('../fonts/black-panther/');
+    src: url('../fonts/black-panther/?#iefix') format('embedded-opentype'),
+         url('../fonts/black-panther/pantheraregular-mvz9j-webfont.woff2') format('woff2'),
+         url('../fonts/black-panther/pantheraregular-mvz9j-webfont.woff') format('woff'),
+         url('../fonts/black-panther/pantheraregular-mvz9j-webfont.ttf') format('truetype'),
+         url('../fonts/black-panther/pantheraregular-mvz9j-webfont.svg#pantheraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cantarell';
+    src: url('../fonts/cantarell/');
+    src: url('../fonts/cantarell/?#iefix') format('embedded-opentype'),
+         url('../fonts/cantarell/cantarell-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cantarell/cantarell-regular-webfont.woff') format('woff'),
+         url('../fonts/cantarell/cantarell-regular-webfont.ttf') format('truetype'),
+         url('../fonts/cantarell/cantarell-regular-webfont.svg#cantarellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'wakanda_forever';
+    src: url('../fonts/wakanda_forever/');
+    src: url('../fonts/wakanda_forever/?#iefix') format('embedded-opentype'),
+         url('../fonts/wakanda_forever/wakandaforever-regular-webfont.woff2') format('woff2'),
+         url('../fonts/wakanda_forever/wakandaforever-regular-webfont.woff') format('woff'),
+         url('../fonts/wakanda_forever/wakandaforever-regular-webfont.ttf') format('truetype'),
+         url('../fonts/wakanda_forever/wakandaforever-regular-webfont.svg#wakanda_foreverregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

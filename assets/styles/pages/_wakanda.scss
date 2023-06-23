@@ -1,0 +1,67 @@
+
+/* Dans Wakanda */
+.hero-wakanda {
+    width: 100%;
+    height: 800px;
+    background-image: url("../Illustrations_logo/2_Wakanda_page/Pantherwakanda1-mod.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1.5em;
+}
+
+.hero-wakanda .div-hero {
+    width: 30%;
+    text-align: justify;
+    margin-left: -1em;
+}
+
+.hero-wakanda h1{
+    font-family: "beyno";
+    color: var(--viollet1);
+    line-height: 40px;
+    font-size: 40px;
+    letter-spacing: 4px;
+    width: 500px;
+    margin-top: 2em;
+}
+
+.hero-wakanda h2 {
+    font-family: "wakanda_forever";
+    letter-spacing: 10px;
+    width: 500px;
+}
+
+.hero-wakanda p{
+    width: 370px;
+    // margin-top: 150px;
+}
+
+/* Les sections dans Wakanda */
+.doc {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+    margin: 0 auto;
+    text-align: justify;
+    background: url('../Illustrations_Logo/2_Wakanda_page/Pantherwakanda2-mod.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.doc iframe{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.doc div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.doc div img {
+    margin-top: 1em;
+    width: 100%;
+}

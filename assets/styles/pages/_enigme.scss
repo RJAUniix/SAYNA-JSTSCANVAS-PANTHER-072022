@@ -1,0 +1,157 @@
+.hero-enigme {
+    width: 90%;
+    background-image: url("../Illustrations_logo/3_Page_Enigme/Pantherenigme1.png");
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: -10em;
+}
+
+.div-hero {
+    width: 30%;
+    height: auto;
+    color: white;
+    padding-left: 13%;
+    padding-top: 10%;
+}
+
+.div-hero-enigme {
+    float: right;
+    width: 35%;
+    height: auto;
+    color: white;
+    padding-top: 25%;
+    margin-right: 5em;
+}
+
+.div-hero-enigme h1{
+    font-family: "beyno";
+    color: var(--viollet1);
+    line-height: 40px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-align: justify;
+    padding: 5px;
+}
+
+.hero-text-enigme {
+    margin-top: 40px;
+    width: 30%;
+    text-align: justify;    
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.hero-text-enigme p{
+    margin-top: 20px;
+}
+
+.hero-text-enigme, .div-hero-enigme #hero-img1 {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div-hero-enigme #hero-img1 {
+    width: 700px;
+    margin-left: 50px;
+}
+
+#text-enigme {
+    width: 70%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-areas: 
+        "text text"
+        "alpha paragraphe";
+    gap: 1em;
+    margin-bottom: 100px;
+}
+
+#text-enigme h3{
+    grid-area: text;
+    font-family: "wakanda_forever";
+    letter-spacing: 7px;
+    line-height: 30px;
+    margin-bottom: 2em;
+}
+
+#text-enigme p .car {
+    font-family: "wakanda_forever";
+}
+
+#form {
+    margin-top: 150px;
+}
+
+#text-enigme input {
+    width: 75%;
+    padding: 7px 7px 7px 25px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--rose1);
+    color: var(--rose1);
+}
+
+#text-enigme input::placeholder {
+    font-size: 11px;
+    color: var(--rose1);
+}
+
+#text-enigme #div-btn{
+    width: 75%;
+    text-align: center;
+}
+
+#text-enigme button{
+    width: 120px;
+    padding: 9px;
+    border-radius: 50px;
+    background-color: var(--rose1);
+    font-size: 11px;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease;
+    border: none;
+}
+
+#text-enigme button:hover{
+    box-shadow: 0 0 20px var(--rose1);
+}
+
+.question {
+    grid-area: paragraphe;
+    width: 30vw;
+    text-align: center;
+    margin-top: 5em;
+    margin-left: 5em;
+}
+
+.question div, .question div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.question div p {
+    width: 100%;
+}
+
+.question div {
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
+}
+
+.question div img {
+    width: 650px;
+    margin-left: 60px;
+}
+
+.enigme-droite{
+    grid-area: alpha;
+}
