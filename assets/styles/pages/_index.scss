@@ -18,50 +18,76 @@
     font-family: "cantarell";
 }
 
-.slider {
+.container {
     width: 90%;
     display: flex;
+    flex-wrap: nowrap;
     margin-left: 10%;
     background-color: var(--bleue2);
+    transition: all 2s ease;
+
+    div {
+        display: block;
+        flex-wrap: nowrap;
+
+        img {
+            float: left;
+            margin-right: 1em;
+        }
+    }
+
+    .slider-text{
+        margin-top: 20px;
+        padding: 1em;
+        width: 500px;
+        height: auto;
+        padding: 1em 1em 1em 3em;
+
+        p{
+            text-align: justify;
+            height: auto;
+            overflow: auto;
+        }
+    }
 }
 
-.slider-text{
-    margin-top: 20px;
-    padding: 1em;
-}
-
-.slider-text p{
-    text-align: justify;
-    height: auto;
-    overflow: auto;
-}
 
 
-#killmonger{
-    position: relative;
-    margin-bottom: -70px;
-    align-items: center;
-}
 
-#killmonger img{
-    width: auto;   
-    height: 20em;
-    margin-top: -2em;
-    margin-left: 1.5em;
-}
+// #killmonger{
+//     position: relative;
+//     margin-bottom: -70px;
+//     align-items: center;
+// }
 
-.slider-img{
-    width: auto;
-    height: 250px;
-}
+// #killmonger img{
+//     width: auto;   
+//     height: 20em;
+//     margin-top: -2em;
+//     margin-left: 1.5em;
+// }
 
-/* La petite flèche pour le slider */
-#fleche {
+// .slider-img{
+//     width: auto;
+//     height: 250px;
+// }
+
+/* Les flèches pour le slider */
+#droite {
     width: 200px;
     position: absolute;
+    top: 580px;
     right: -80px;
-    top: 570px;
     cursor: pointer;
+}
+
+#gauche {
+    width: 200px;
+    position: absolute;
+    top: 580px;
+    left: 80px;
+    cursor: pointer;
+    transform: rotate(180deg);
 }
 
 .bio {
