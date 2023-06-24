@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLACK PANTHER | Enigme</title>
     <link rel="stylesheet" href="assets/styles/main.css">
+    <script src="assets/scripts/enigme.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,14 +31,17 @@
                 <div class="hero-text-enigme">
                     <div>
                         <P>Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde
-                            rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la
-                            vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des
+                            rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la vie.
+                            Leur Générale, Okoyé est également la dirigeante des forces armées et des
                             renseignements wakandais.
-                            <br>
-                            Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
-                            et apprend par la même occasion la première valeur d’une Dora Milaje !
+                        </P>
+                        <p>
+                            La réussite de cette évaluation ne dépend pas de la chance mais bel et bien de
+                            l’entrainement que tu as suivi jusqu’ici ainsi que de ta détermination. Relève ce défi et
+                            montre-nous que tu es capable de porter les valeurs du Black Panther et du Wakanda!
                         </P>
                             <img id="hero-img1" src="assets/Illustrations_Logo/3_Page_Enigme/Pantherenigme2.png" alt="Du style">
+                            <img id="hero-img2" src="assets/Illustrations_Logo/3_Page_Enigme/Pantherenigme3.png" alt="Logo tête du black panther">
                     </div>
                 </div>
             </div>
@@ -45,31 +49,22 @@
 
         <section id="text-enigme">
             
-            <h3>" SI JE SUIS FIDELE C’EST A CE TRONE
-                <br> PEU IMPORTE QUI MONTE DESSUS "
-            </h3>
+            <h2>ENIGME NUMERO <span id="numEnigme"></span></h2>
 
-            <div class="enigme-droite"> 
-                <p>Voici la transicription de l’alphabet :</p>
-                <p>A = <span class="car">A</span> ; B = <span class="car">b</span> ; c = <span class="car">c</span> ; d = <span class="car">d</span> ; e = <span class="car">e</span> ; f = <span class="car">f</span> ; g = <span class="car">g</span> ; h = <span class="car">h</span> ; i = <span class="car">i</span> ; j = <span class="car">j</span> ;<br>
-                    k = <span class="car">k</span> ; l = <span class="car">l</span> ; m = <span class="car">m</span> ; n = <span class="car">n</span> ; o = <span class="car">o</span> ; p = <span class="car">p</span> ; q = <span class="car">q</span> ; r = <span class="car">r</span> ; s = <span class="car">s</span> ; t = <span class="car">t</span> ;<br>
-                    u = <span class="car">u</span> ; w = <span class="car">w</span> ; x = <span class="car">x</span> ; y = <span class="car">y</span> ; z = <span class="car">z</span>
-                </p>
+            <div class="question"> 
+                <p id="enonce"></p>
+                <span id="indice"></span>
                 <p id="form">Alors, as tu la réponse ?</p>
-                <input type="text" placeholder="Réponse">
+                <input type="text" placeholder="Réponse" id="reponse">
                 <div id="div-btn">
-                    <button>ENVOYER</button>
+                    <button id="envoyer">ENVOYER</button>
                 </div>
             </div>
 
-            <div class="question">
+            <div class="anecdote">
                 <div>
-                    <p>Le savais tu ?<br><br>
-                    Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français est
-                        la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une
-                        phrase. Et si tu regardais quel symbole revient le plus souvent ?
-                    </p>
-                    <img id="hero-img1" src="assets/Illustrations_Logo/3_Page_Enigme/Pantherenigme2.png" alt="Du style">
+                    <p id="anecdote-text"></p>
+                    <img id="hero-img1" src="assets/Illustrations_Logo/3_Page_Enigme/Pantherenigme2-1.png" alt="Du style">
                 </div>
             </div>
         </section>

@@ -56,8 +56,15 @@
 }
 
 .div-hero-enigme #hero-img1 {
-    width: 700px;
+    width: 750px;
     margin-left: 50px;
+}
+
+.div-hero-enigme #hero-img2 {
+    width: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 #text-enigme {
@@ -71,7 +78,21 @@
     margin-bottom: 100px;
 }
 
-#text-enigme h3{
+#text-enigme h2 {
+    font-family: "beyno";
+    color: var(--viollet1);
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+    span {
+        font-family: arial ,sans-serif;
+        color: var(--viollet1);
+        font-size: 20px;
+    }
+}    
+
+#text-enigme h3 {    
     grid-area: text;
     font-family: "wakanda_forever";
     letter-spacing: 7px;
@@ -79,12 +100,20 @@
     margin-bottom: 2em;
 }
 
-#text-enigme p .car {
-    font-family: "wakanda_forever";
+.question{
+    grid-area: alpha;
+    
+    #enonce {
+        margin-bottom: 4em;
+    }
+
+    p {
+        text-align: justify;
+    }
 }
 
 #form {
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 #text-enigme input {
@@ -122,7 +151,7 @@
     box-shadow: 0 0 20px var(--rose1);
 }
 
-.question {
+.anecdote {
     grid-area: paragraphe;
     width: 30vw;
     text-align: center;
@@ -130,28 +159,31 @@
     margin-left: 5em;
 }
 
-.question div, .question div img {
+.anecdote div, .anecdote div img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 } 
 
-.question div p {
+.anecdote div p {
     width: 100%;
+    margin-left: 100px;
+    font-size: 12px;
+    text-align: justify;
+
+    .car {
+        font-family: "wakanda_forever";
+    }
 }
 
-.question div {
+.anecdote div {
     position: relative;
     z-index: 1;
     margin-top: -100px;
 }
 
-.question div img {
-    width: 650px;
-    margin-left: 60px;
-}
-
-.enigme-droite{
-    grid-area: alpha;
+.anecdote div img {
+    width: 600px;
+    margin-left: 100px;
 }
