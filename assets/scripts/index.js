@@ -5,18 +5,17 @@ const flecheGauche = document.querySelector('#gauche');
 
 // initialisation
 let page = 0;
-console.log(flecheDroite);
 
 flecheDroite.addEventListener('click', () => {
     page-- ;
-    container.style.transform = "translate("+ page*90 +"%)";
     afficherMasquer();
+    container.style.transform = "translate("+ page*95 +"%)";
 });
 
 flecheGauche.addEventListener('click', () => {
     page++ ;
-    container.style.transform = "translate("+ page*90 +"%)";
     afficherMasquer();
+    container.style.transform = "translate("+ page*95 +"%)";
 });
 
 afficherMasquer();
@@ -24,9 +23,11 @@ afficherMasquer();
 // Affichage des flèches
 function afficherMasquer() {
     if(page <= -4) {
+        page = -3.5;
         flecheDroite.style.visibility = "hidden";
     }
-    else if(page == 0) {
+    else if(page >= 0) {
+        page = 0;
         flecheGauche.style.visibility = "hidden";
     }
     else {

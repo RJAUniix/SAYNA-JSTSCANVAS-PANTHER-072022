@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -39,10 +38,15 @@ h2 {
     margin-bottom: 20px;
 }
 
+h1:hover, h2:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+
 h3 {
     font-family: "beyno";
     color: var(--viollet1);
-    line-height: 40px;
+    line-height: 50px;
 }
 
 p {
@@ -57,14 +61,14 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 2% auto;
-}
 
-nav .nav-logo img{
-    width: 100px;
-    height: auto;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    .nav-logo img{
+        width: 100px;
+        height: auto;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 /* Pour que les logos passe en viollet au passage de la souris */
@@ -76,11 +80,11 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
-}
 
-nav ul li{
-    margin: 10px;
-    color: white;
+    li{
+        margin: 10px;
+        color: white;
+    }
 }
 
 .nav-links a, .nav-links a:visited{
@@ -121,21 +125,22 @@ body{
     margin-left: 10px;
     height: 340px;
     text-align: end;
-}
 
-.icons-statics img{
-    width: 20px;
-    margin-top: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Annimation sur les icons */
-.icons-statics img:hover{
-    filter: invert(0%) sepia(100%) saturate(0);
+    img{
+        width: 20px;
+        margin-top: 10px;
+        transition: all 0.3s ease-in-out;
+        
+        /* Annimation sur les icons */
+        &:hover{
+            filter: invert(0%) sepia(100%) saturate(0);
+        }
+    }
 }
 
 #hr1 {
     border: 2px solid var(--viollet1);
+    transition: all 5s ease;
 }
 
 #hr2 {
@@ -145,9 +150,8 @@ body{
     margin-left: 8px;
     float: left;
     height: 60%;
+    transition: all 5s ease;
 }
-
-/* Fin des sections dans Enigme */
 
 /* Le footer */
 footer {
@@ -157,6 +161,7 @@ footer {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background : linear-gradient(180deg, #3D2DA6 0%, #021740 90.43%);
 }
 
 .footer-image #bulle-footer, .footer-image #logo-footer{
@@ -189,57 +194,57 @@ footer {
     position: relative;
     margin-right: 5em;
     transition: all 0.5s ease-out; /* Animation de 0,5s avec un effet de transition doux */
-}
-  
-.footer-image:hover {
-    transform: scale(1.1);
+    
+    &::hover {
+        transform: scale(1.1);
+    }
 }
 
 .footer-links {
     grid-area: footer-links;
     color: white;
-}
 
-.footer-links p{
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
+    p{
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
 }
 
 .footer-links ul{
     list-style: none;
     margin-top: 20px;
-}
 
-.footer-links ul li a{
-    line-height: 25px;
-    font-family: "cantarell";
-    cursor: pointer;
-    font-size: 11px;
-    text-decoration: none;
-    color: white;
+    li a{
+        line-height: 25px;
+        font-family: "cantarell";
+        cursor: pointer;
+        font-size: 11px;
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .footer-socials {
     grid-area: footer-socials;
-}
 
-.footer-socials p {
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
-}
+    p {
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
 
-.footer-socials img {
-    width: 30px;
-    margin-right: 20px;
-    transition: all 0.5s ease-out; /* Animation de 0,5s avec un effet de transition doux */
-}
-  
-.footer-socials img:hover {
-    transform: scale(1.1);
+    img {
+        width: 30px;
+        margin-right: 20px;
+        transition: all 0.5s ease-out; /* Animation de 0,5s avec un effet de transition doux */
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
 .footer-text {

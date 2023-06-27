@@ -1,13 +1,13 @@
 /* Pour la page d'acceuil */
 @media screen and (max-width: 1000px) {
     .slider-text {margin-top: 0;}
-    #killmonger img {margin-top: 0;}
     /* Pour que le texte ne passe pas à la ligne */
     .div-hero a{white-space: nowrap;}
     .bio {display: block; margin: 0 auto;}
     .bio-gauche {margin-bottom: 30%;}
-    .bio-droite div{margin: 0 auto}
-    #bio-photo2 {margin-left: 20vw;}
+    .bio .bio-droite div{margin: 0 auto; width: 50%; height: auto;}
+    .bio .bio-droite p{font-size: 12px; line-height: 1.2em;}
+    #bio-photo2 {min-width: 250px;}
 }
 
 @media screen and (max-width: 800px) {
@@ -16,7 +16,9 @@
     .bio {display: block; margin: 0 auto;}
     .bio-gauche {margin-bottom: 15em;}
     .bio-droite p {line-height: 1em;}
-    .contact form {width: 90%; padding: 2em;}
+    .bio .bio-droite div{margin: 0 auto; min-width: 250px; height: auto;}
+    .contact form {min-width: 350px; padding: 2em;}
+    .contact form input,.contact form textarea{min-width: 80%;}
     /* Pour tous les footer */
     footer {width: 100%; padding: 1em 0; margin: 0 auto;}
     .card-footer {
@@ -54,8 +56,6 @@
     #fleche {top: 600px}
     .bio {display: block; margin: 0 auto;}
     .bio-gauche {margin-bottom: 15em;}
-    .bio-droite div {width: 150px; height: 600px; margin: 50% auto;}
-    .bio-droite div #bio-photo1 {width: 180px;}
     .bio-droite #bio-photo2 {padding: 0; margin: 0;}
     /* Pour tous les footer */
     .contact form {width: 40%; padding: 5em;}
@@ -93,7 +93,9 @@
 
   @media screen and (max-width: 400px) {
     .hero-wakanda h1 {width: auto;}
+    .hero-wakanda h2 {width: 250px;}
     .hero-wakanda .div-hero {width: 70%;}
+    .hero-wakanda p {width: 250px; font-size: 15px;}
     .doc  {display: block;}
   }
 
@@ -102,20 +104,16 @@
   @media screen and (max-width: 1000px) {
     .div-hero-enigme {display: block; float: none; margin: 0 auto;}
     .div-hero-enigme h1{text-align: center; margin: 0 auto; text-shadow: 1px 1px 1px  rgb(0, 0, 0);}
-    .hero-text-enigme {margin: 20% 0 0 0;}
-    .hero-text-enigme #hero-img2 {visibility: hidden;}
+    .hero-text-enigme {margin: 18em auto; display: block;}
   }
 
   
-  @media screen and (max-width: 700px) {
-    .hero-text-enigme {margin-top: 20%; font-size: 13px; margin-bottom: 150%;}
-    .div-hero-enigme h1 {margin-top: 150px; width: 170%; margin-bottom: 20%;}
-    #form {margin-top: 2em;}
-    #text-enigme { grid-template-areas:
-                        "text text"
-                        "alpha alpha" 
-                        "paragraphe paragraphe";}
-    .question {margin-top: 200px;}
+  @media screen and (max-width: 800px) {
+    .div-hero-enigme h1 {margin-top: 150px; width: 170%; margin-bottom: 10em;}
+    .div-hero-enigme p {width: 350px; margin-left: -70px;}
+    #text-enigme {display: block;}
+    #text-enigme .anecdote{margin-top: 20em;} 
+    #text-enigme h2{margin-top: 150px;}
     .question div{width: 150%; font-size: 17px;}
     }  
     

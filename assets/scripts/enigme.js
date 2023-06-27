@@ -24,10 +24,13 @@ const enonce = document.querySelector('#enonce');
 const indice = document.querySelector('#indice');
 const anecdote = document.querySelector('#anecdote-text');
 const reponse = document.querySelector('#reponse');
-const nextBtn = document.querySelector('#envoyer')
+const nextBtn = document.querySelector('#envoyer');
+const popup = document.querySelector('#popup');
+const rebour = document.querySelector('#count');
 
 // initialisation
-count = 0;
+let count = 0;
+// let count_down = 40;
 
 update();
 
@@ -45,7 +48,7 @@ nextBtn.addEventListener('click', questionSuivant);
 
 function questionSuivant() {
     if (count == (listQuestions.length-1)){
-        alert("C'est fini");
+        popup.classList.add('popup-ouvert');
     }
     else {
         if (reponse.value === "") {
@@ -57,3 +60,17 @@ function questionSuivant() {
         }
     }
 }
+
+// rebour.textContent = count_down;
+
+// function afficherTime() {
+//     // rebour.textContent = count_down;
+//     // popup.appendChild(rebour);
+//     console.log(count_down);
+// }
+
+// while(count_down > 0){
+//     setTimeout(afficherTime,1000);
+
+//     count_down--;
+// }

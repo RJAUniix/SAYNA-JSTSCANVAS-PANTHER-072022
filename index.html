@@ -7,6 +7,7 @@
     <title>BLACK PANTHER | Home</title>
     <link rel="stylesheet" href="assets/styles/main.css">
     <script src="assets/scripts/index.js" defer></script>
+    <script src="test.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,7 +24,6 @@
             </div>
         </nav>
     </header>
-
     
 
     <!-- Les icons static sur le coté -->
@@ -49,7 +49,7 @@
                         Ce film marque tout une génération, “c’est 100% africain et c’est parfait”.
                     </P>
                 </div>
-                <a href="#">Voir plus ></a>
+                <a href="#bio">Voir plus ></a>
             </div>
         </section>
 
@@ -59,9 +59,9 @@
             <div class="container">
 
                 <div>
-                    <img src="assets/Illustrations_Logo/1_Landing_page/Pantherhome_slider_1.png" alt="Photo de KillMonger">
+                    <img class="slider-img" id="killmonger" src="assets/Illustrations_Logo/1_Landing_page/Pantherhome_slider_1.png" alt="Photo de KillMonger">
             
-                    <div class="slider-text">
+                    <div class="slider-text" id="killmonger-div">
                         <h3>KILLMONGER</h3>
                         <p>La sauvagerie de N'Jadaka alors qu'il servait dans une
                             unité d'opérations noires de l'armée américaine lui a
@@ -74,7 +74,7 @@
                 </div>
     
                 <div>
-                    <img class="slider-img" src="assets/Illustrations_Logo/1_Landing_page/Pantherhome_slider_2.png" alt="Photo d'Okoye">
+                    <img class="slider-img" id="okoye" src="assets/Illustrations_Logo/1_Landing_page/Pantherhome_slider_2.png" alt="Photo d'Okoye">
                 
     
                     <div class="slider-text">
@@ -222,7 +222,7 @@
 
         </section>
 
-        <section class="bio">
+        <section class="bio" id="bio">
             <div class="bio-gauche">
                 <article>
                     <h3>Naissance d’un prince</h3>
@@ -367,5 +367,7 @@
         </div>
     </footer>
 
+    <!-- Notre canva -->
+    <canvas id="canvas"></canvas>
 </body>
 </html>

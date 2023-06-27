@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .hero-accueil {
     background-image: url("../Illustrations_Logo/1_Landing_page/Pantherhome1..png");
     background-position: top right;
@@ -6,10 +12,19 @@
     width: 96%;
     height: 500px;
     margin-top: -220px;
-}
 
-#hero-accueil-text {
-    width: 23em;
+    
+    #hero-accueil-text {
+        width: 23em;
+    }
+
+    h1 {
+        width: 500px;
+    }
+
+    h2 {
+        width: 500px;
+    }
 }
 
 .hero-accueil a,.slider a, .hero-wakanda a{
@@ -19,27 +34,32 @@
 }
 
 .container {
-    width: 90%;
+    width: 95%;
+    height: 250px;
     display: flex;
     flex-wrap: nowrap;
-    margin-left: 10%;
-    background-color: var(--bleue2);
-    transition: all 2s ease;
+    margin-left: 5%;
+    margin-bottom: 15%;
+    transition: all 1s ease;
+    overflow: visible;
+    margin-top: 5%;
 
     div {
         display: block;
         flex-wrap: nowrap;
+        background-color: var(--bleue2);
 
         img {
             float: left;
             margin-right: 1em;
+            width: 200px;
         }
     }
 
     .slider-text{
         margin-top: 20px;
         padding: 1em;
-        width: 500px;
+        width: 480px;
         height: auto;
         padding: 1em 1em 1em 3em;
 
@@ -48,46 +68,66 @@
             height: auto;
             overflow: auto;
         }
+
+        h3 {
+            line-height: 20px;
+        }
+    }
+    //Pour ajuster la taile de la première div 
+    #killmonger-div {
+        width: 544px;
+        height: auto;
+    }
+
+    .slider-img {
+        height: 250px;
+        width: auto;
+        
+        &:hover {
+            transform: scale(1.2);
+            transition: all 1s ease;
+        }
     }
 }
 
 
 
-
-// #killmonger{
-//     position: relative;
-//     margin-bottom: -70px;
-//     align-items: center;
-// }
-
-// #killmonger img{
-//     width: auto;   
-//     height: 20em;
-//     margin-top: -2em;
-//     margin-left: 1.5em;
-// }
-
-// .slider-img{
-//     width: auto;
-//     height: 250px;
-// }
+// Pour ajuster la taille de la première image
+#killmonger{
+    width: auto;   
+    height: 20em;
+    margin-top: -2em;
+    margin-left: 1.5em;
+}
 
 /* Les flèches pour le slider */
 #droite {
     width: 200px;
     position: absolute;
-    top: 580px;
+    top: 620px;
     right: -80px;
     cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 #gauche {
     width: 200px;
     position: absolute;
-    top: 580px;
-    left: 80px;
+    top: 620px;
+    left: 20px;
     cursor: pointer;
     transform: rotate(180deg);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .bio {
@@ -96,141 +136,162 @@
     margin: 10% auto;
     grid-template-columns: 2fr 1fr;
     gap: 10%;
+
+    .bio-gauche{
+        text-align: justify;
+
+        h3 {
+            line-height: 3em;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+    
+    .bio-droite {
+        div{
+            background-color: rgba(255, 255, 255, 0.863);
+            font-family: "cantarell";
+            border-radius: 5px;
+            text-align: justify;
+            width: 100%;
+            height: 550px;
+            padding: 50px;
+            margin-top: 150px;
+        }
+        
+        label{
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+        }    
+
+        p{
+            color: var(--bleue2);
+            line-height: 12px;
+        }
+
+        span{
+            font-weight: bold;
+        }
+
+        button{
+            display: inline-flex;
+            margin-left: 1.2em;
+            font-size: 10px;
+            padding: 8px;
+            margin-bottom: 20px;
+            color: white;
+            background-color: var(--viollet2);
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+    } 
 }
 
-.bio-gauche{
-    text-align: justify;
-}
 
-.bio-droite div{
-    background-color: rgba(255, 255, 255, 0.863);
-    font-family: "cantarell";
-    border-radius: 5px;
-    text-align: justify;
-    width: 100%;
-    height: 550px;
-    padding: 50px;
-    margin-top: 150px;
-}
-
-.bio-droite label{
-    display: block;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
-    line-height: 30px;
-}
 
 #bio-photo1 {
-    width: 300px;
+    width: 100%;
     height: auto;
     float: inline-start;
     position: relative;
     margin-top: -230px;
-}
 
-.bio-droite p{
-    color: var(--bleue2);
-    line-height: 12px;
-}
+    &:hover {
+        transform: scale(1.2);
+        transition: all 1s ease;
+    }
 
-.bio-droite span{
-    font-weight: bold;
-}
-
-.bio-droite button{
-    display: inline-flex;
-    margin-left: 1.2em;
-    font-size: 10px;
-    padding: 8px;
-    margin-bottom: 20px;
-    color: white;
-    background-color: var(--viollet2);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
 }
 
 #bio-photo2 {
-    width: 300px;
+    display: block;
+    width: 80%;
     height: auto;
-    margin: 2em 0em 0em 3em;
+    margin: 3em auto;
 }
 
 /* La section contact */
 .contact {
-    height: 750px;
+    height: auto;
+    margin-bottom: 12em;
     background-image: url('../Illustrations_Logo/1_Landing_page/Pantherhome4.png');
     background-position: top;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-}
 
-.contact form{
-    width: 50%;
-    height: auto;
-    padding: 3em 7em 3em 7em;
-    margin: 0 auto;
-    display: block;
-    justify-content: center;
-    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.137));
-    border-radius: 150px;
-    position: relative;
-    top: 100px;
-}
+    form{
+        width: 50%;
+        height: auto;
+        padding: 3em 7em 3em 7em;
+        margin: 0 auto;
+        display: block;
+        justify-content: center;
+        background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.137));
+        border-radius: 150px;
+        position: relative;
+        top: 100px;
 
-.contact form p{
-    color: black;
-    text-align: center;
-}
-.contact form p+p{
-    font-size: 30px;
-    font-weight: bold;
-}
+        p{
+            color: black;
+            text-align: center;
+        }
+    }
 
-.contact form input,.contact form textarea {
-    background: transparent;
-    color: black;
-}
+    form p+p{
+        font-size: 30px;
+        font-weight: bold;
+    }
 
-.contact form input,.contact form button,.contact form textarea{
-    display: block;
-    line-height: 30px;
-    margin: 0 auto;
-}
+    form input, form textarea {
+        background: transparent;
+        color: black;
+    }
 
-.contact form input {
-    height: 10px;
-}
+    form input, form button, form textarea{
+        display: block;
+        line-height: 30px;
+        margin: 0 auto;
+    }
 
-.contact form input::placeholder,.contact form textarea::placeholder {
-    color: black;
-}
+    form input {
+        height: 10px;
+    }
 
-.contact form input,textarea{
-    width: 20vw;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-radius: 40px;
-    padding: 1rem;
-    padding-left: 2rem;
-    border: 1px solid black;
-}
+    form input::placeholder, form textarea::placeholder {
+        color: black;
+    }
 
-.contact form button{
-    border-radius: 50px;
-    margin-top: 20px;
-    padding: 5px;
-    width: 120px;
-    background-color: var(--rose1);
-    border: none;
-    font-size: 10px;
-    font-weight: bold;
-    box-shadow: 0 0 5px var(--rose1);
-    transition: box-shadow 0.3s ease;
-}
+    form input,textarea{
+        width: 80%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 40px;
+        padding: 1rem;
+        padding-left: 2rem;
+        border: 1px solid black;
+    }
 
-.contact form button:hover{
-    box-shadow: 0 0 20px var(--rose1);
+    form button{
+        border-radius: 50px;
+        margin-top: 20px;
+        padding: 5px;
+        width: 120px;
+        background-color: var(--rose1);
+        border: none;
+        font-size: 10px;
+        font-weight: bold;
+        box-shadow: 0 0 5px var(--rose1);
+        transition: box-shadow 0.3s ease;
 
+        &:hover{
+            box-shadow: 0 0 20px var(--rose1);
+        
+        }
+    }
 }

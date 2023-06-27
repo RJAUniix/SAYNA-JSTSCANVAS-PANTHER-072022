@@ -23,17 +23,17 @@
     color: white;
     padding-top: 25%;
     margin-right: 5em;
-}
 
-.div-hero-enigme h1{
-    font-family: "beyno";
-    color: var(--viollet1);
-    line-height: 40px;
-    font-size: 40px;
-    margin-bottom: 20px;
-    letter-spacing: 4px;
-    text-align: justify;
-    padding: 5px;
+    h1{
+        font-family: "beyno";
+        color: var(--viollet1);
+        line-height: 40px;
+        font-size: 40px;
+        margin-bottom: 20px;
+        letter-spacing: 4px;
+        text-align: justify;
+        padding: 5px;
+    }
 }
 
 .hero-text-enigme {
@@ -42,10 +42,10 @@
     text-align: justify;    
     margin-top: 200px;
     margin-left: 300px;
-}
 
-.hero-text-enigme p{
-    margin-top: 20px;
+    p{
+        margin-top: 20px;
+    }
 }
 
 .hero-text-enigme, .div-hero-enigme #hero-img1 {    
@@ -57,7 +57,7 @@
 
 .div-hero-enigme #hero-img1 {
     width: 750px;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 .div-hero-enigme #hero-img2 {
@@ -76,28 +76,28 @@
         "alpha paragraphe";
     gap: 1em;
     margin-bottom: 100px;
-}
 
-#text-enigme h2 {
-    font-family: "beyno";
-    color: var(--viollet1);
-    font-size: 20px;
-    text-decoration: underline;
-    margin-bottom: 20px;
-
-    span {
-        font-family: arial ,sans-serif;
+    h2 {
+        font-family: "beyno";
         color: var(--viollet1);
         font-size: 20px;
-    }
-}    
+        text-decoration: underline;
+        margin-bottom: 20px;
+    
+        span {
+            font-family: arial ,sans-serif;
+            color: var(--viollet1);
+            font-size: 20px;
+        }
+    }    
 
-#text-enigme h3 {    
-    grid-area: text;
-    font-family: "wakanda_forever";
-    letter-spacing: 7px;
-    line-height: 30px;
-    margin-bottom: 2em;
+    h3 {    
+        grid-area: text;
+        font-family: "wakanda_forever";
+        letter-spacing: 7px;
+        line-height: 30px;
+        margin-bottom: 2em;
+    }
 }
 
 .question{
@@ -124,16 +124,16 @@
     background-color: transparent;
     border: 1px solid var(--rose1);
     color: var(--rose1);
-}
 
-#text-enigme input::placeholder {
-    font-size: 11px;
-    color: var(--rose1);
-}
+    &::placeholder {
+        font-size: 11px;
+        color: var(--rose1);
+    }
 
-#text-enigme #div-btn{
-    width: 75%;
-    text-align: center;
+    #div-btn{
+        width: 75%;
+        text-align: center;
+    }
 }
 
 #text-enigme button{
@@ -145,10 +145,10 @@
     font-weight: bold;
     transition: box-shadow 0.3s ease;
     border: none;
-}
 
-#text-enigme button:hover{
-    box-shadow: 0 0 20px var(--rose1);
+    &:hover{
+        box-shadow: 0 0 20px var(--rose1);
+    }
 }
 
 .anecdote {
@@ -166,24 +166,89 @@
     transform: translate(-50%, -50%);
 } 
 
-.anecdote div p {
-    width: 100%;
-    margin-left: 100px;
-    font-size: 12px;
-    text-align: justify;
-
-    .car {
-        font-family: "wakanda_forever";
-    }
-}
 
 .anecdote div {
     position: relative;
     z-index: 1;
     margin-top: -100px;
+
+    p {
+        width: 100%;
+        font-size: 12px;
+        text-align: justify;
+
+        .car {
+            font-family: "wakanda_forever";
+        }
+    }
+
+    img {
+        width: 600px;
+    }
 }
 
-.anecdote div img {
-    width: 600px;
-    margin-left: 100px;
+/* Popup */
+.popup {
+    background: #947f94c9;
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    transform: scale(0.1);
+    text-align: center;
+    padding: 3em;
+    visibility: hidden;
+    transition: all 1s ease;
+    border: 1px solid rgba(128, 128, 128, 0.726);
+
+    p{
+        font-size: 18px;
+        color: white;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
+
+    #stop {
+        width: 55%;
+        padding: 15px;
+        border-radius: 50px;
+        background-color: var(--rose1);
+        font-size: 13px;
+        font-weight: 550;
+        transition: box-shadow 0.3s ease;
+        border: none;
+        margin-top: 4em;
+        margin-bottom: 3em;
+
+        &:hover{
+            box-shadow: 0 0 20px var(--rose1);
+        }
+    }
+
+    div {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+
+        img {
+            margin-left: 3em;
+            float: left;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        p + p {
+            font-size: 28px;
+        }
+    }
+}
+
+.popup-ouvert {
+    transform: translate(0%,50%) scale(1.2);
+    visibility: visible;
 }
