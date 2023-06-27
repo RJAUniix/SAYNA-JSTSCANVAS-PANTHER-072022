@@ -129,21 +129,26 @@ function questionSuivant() {
     function updateDrawingCoordinates(e) {
         const rect = canvas.getBoundingClientRect();
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-        e.clientY = e.clientY - rect.top - scrollTop;
-        console.log(rect.top);
-    }
-
-    canvas.addEventListener('mousemove', function(e){
-        updateDrawingCoordinates(e);
-        
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+      
+        const mouseX = e.clientX - rect.left + scrollLeft;
+        const mouseY = e.clientY + scrollTop;
+        return {
+          x: mouseX,
+          y: mouseY
+        };
+      }
+      
+      canvas.addEventListener('mousemove', function(e) {
+        const { x, y } = updateDrawingCoordinates(e);
+      
         if (!running) {
-            clear();
-            icon.x = e.clientX;
-            icon.y = e.clientY;
-            icon.draw();
+          clear();
+          icon.x = x;
+          icon.y = y;
+          icon.draw();
         }
-    });
+      });
 
     canvas.addEventListener("click",function(e){
     if (!running) {
