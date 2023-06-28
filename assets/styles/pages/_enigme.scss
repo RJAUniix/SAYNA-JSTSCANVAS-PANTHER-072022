@@ -1,3 +1,11 @@
+// Le canva
+#canvas {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    z-index: 999;
+}
+
 .hero-enigme {
     width: 90%;
     background-image: url("../Illustrations_logo/3_Page_Enigme/Pantherenigme1.png");
@@ -102,6 +110,7 @@
 
 .question{
     grid-area: alpha;
+    width: 400px;
     
     #enonce {
         margin-bottom: 4em;
@@ -145,6 +154,7 @@
     font-weight: bold;
     transition: box-shadow 0.3s ease;
     border: none;
+    z-index: 999;
 
     &:hover{
         box-shadow: 0 0 20px var(--rose1);
@@ -202,6 +212,7 @@
     visibility: hidden;
     transition: all 1s ease;
     border: 1px solid rgba(128, 128, 128, 0.726);
+    z-index: 2;
 
     p{
         font-size: 18px;
@@ -210,7 +221,7 @@
         text-transform: uppercase;
     }
 
-    #stop {
+    button {
         width: 55%;
         padding: 15px;
         border-radius: 50px;
@@ -221,6 +232,7 @@
         border: none;
         margin-top: 4em;
         margin-bottom: 3em;
+        cursor: pointer;
 
         &:hover{
             box-shadow: 0 0 20px var(--rose1);
@@ -253,10 +265,3 @@
     visibility: visible;
 }
 
-// Le canva
-#canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-  }

@@ -9,21 +9,21 @@ let page = 0;
 flecheDroite.addEventListener('click', () => {
     page-- ;
     afficherMasquer();
-    container.style.transform = "translate("+ page*95 +"%)";
+    container.style.transform = "translate("+ page*975 +"px)";
 });
 
 flecheGauche.addEventListener('click', () => {
     page++ ;
     afficherMasquer();
-    container.style.transform = "translate("+ page*95 +"%)";
+    container.style.transform = "translate("+ page*975 +"px)";
 });
 
 afficherMasquer();
 
 // Affichage des flèches
 function afficherMasquer() {
-    if(page <= -4) {
-        page = -3.5;
+    if(page <= -5) {
+        page = -4.5;
         flecheDroite.style.visibility = "hidden";
     }
     else if(page >= 0) {
