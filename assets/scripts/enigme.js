@@ -15,7 +15,7 @@ const listQuestions = [
     {
         "enonce" : "Lorsque T’Challa mange l’herbe en forme de coeur pour recevoir les pouvoirs du Black Panther, il voit son père afin de lui demander conseil afin de devenir un bon roi. Cette scène rappelle la même scène d’un certain film où un père dit à son fils de ne pas oublier qui il est et d’où il vient. Quel est ce film ?",
         "indice" : '<p>01001100 01000101 00100000 01010010 01001111 01001001 00100000 01001100 01001001 01001111 01001110 00001101 00001010</p>',
-        "reponse" : "le roi lion",
+        "reponse" : "Le roi lion",
         "anecdote" : "Le philosophe Francis Bacon inventa en 1605 un alphabet bilitère, uniquement composé des deux lettres A et B. C'est en quelque sorte l'ancêtre du système binaire des ordinateurs actuels car toute lettre pouvait être construite avec un enchainement précis de ces deux lettres, tandis que le système binaire informatique utilise 0 et 1."
     }
 
@@ -50,16 +50,18 @@ function update() {
 nextBtn.addEventListener('click', questionSuivant);
 
 function questionSuivant() {
+    let r = reponse.value;
     if (count == (listQuestions.length-1)){
         popup.classList.add('popup-ouvert');
     }
     else {
-        if (reponse.value === "") {
-            alert("Réponse invalide !");
-        }
-        else {
+        // r = r.toUpperCase();
+        if (r.toLowerCase() === listQuestions[count].reponse.toLowerCase()) {
             count ++;
             update();
+        }
+        else {
+            alert("Réponse incorrecte! Allez un petit effort ;) ");
         }
     }
 }
