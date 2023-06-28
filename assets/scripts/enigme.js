@@ -55,13 +55,17 @@ function questionSuivant() {
         popup.classList.add('popup-ouvert');
     }
     else {
-        // r = r.toUpperCase();
-        if (r.toLowerCase() === listQuestions[count].reponse.toLowerCase()) {
+        if (r === ""){
+            alert("Veuillez renseigner le champ s'il vous plaît !");
+            reponse.focus();
+        }
+        else if (r.toLowerCase() === listQuestions[count].reponse.toLowerCase()) {
             count ++;
             update();
         }
         else {
             alert("Réponse incorrecte! Allez un petit effort ;) ");
+            reponse.focus();
         }
     }
 }
