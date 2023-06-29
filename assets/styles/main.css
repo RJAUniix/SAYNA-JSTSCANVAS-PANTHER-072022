@@ -431,7 +431,7 @@ footer {
   text-align: justify;
   width: 100%;
   height: 550px;
-  padding: 50px;
+  padding: 40px;
   margin-top: 150px;
 }
 .bio .bio-droite label {
@@ -449,11 +449,10 @@ footer {
   font-weight: bold;
 }
 .bio .bio-droite button {
-  display: inline-flex;
-  margin-left: 1.2em;
+  display: inline-block;
   font-size: 10px;
-  padding: 8px;
-  margin-bottom: 20px;
+  padding: 5px;
+  margin: 20px 5px;
   color: white;
   background-color: var(--viollet2);
   border-radius: 4px;
@@ -807,18 +806,18 @@ footer {
 }
 
 .hero-wakanda {
-  width: 100%;
+  width: 103%;
   height: 800px;
   background-image: url("../Illustrations_logo/2_Wakanda_page/Pantherwakanda1-mod.png");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 1.5em;
+  margin-left: -3%;
 }
 .hero-wakanda .div-hero {
   width: 30%;
   text-align: justify;
-  margin-left: -1em;
 }
 .hero-wakanda h1 {
   font-family: "beyno";
