@@ -659,6 +659,7 @@ footer {
 
 .question {
   grid-area: alpha;
+  width: 400px;
 }
 .question #enonce {
   margin-bottom: 4em;
